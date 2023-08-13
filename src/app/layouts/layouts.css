@@ -3,8 +3,8 @@
 }
 
 nav {
-  height: 4em;
-  padding: 0 10em;
+  height: 4rem;
+  padding: 0 10rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -17,7 +17,7 @@ nav-logo {
 }
 
 .container {
-  height: calc(100vh - 8em);
+  height: calc(100vh - 8rem);
   padding: 1em 10em;
   width: 100vw;
   display: grid;
@@ -31,21 +31,27 @@ nav-logo {
   justify-self: center;
   border: 1px solid #e1e2e3;
   border-radius: 12px;
+  cursor: pointer;
+}
+.switch-image {
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
 }
 .switch-name {
-  padding: 1rem 1rem 0.25rem 1rem;
-  font-size: 1.2em;
+  padding: 0.75rem 0.75rem 0.25rem 0.75rem;
+  font-size: 1em;
   font-weight: 500;
 }
 .switch-brand {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 0.75rem 0.75rem 0.75rem;
   font-size: 0.8em;
 }
 
 footer {
-  height: 4em;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-top: 1px solid #eaeaea;
+  font-size: 0.8em;
 }/*# sourceMappingURL=layouts.css.map */

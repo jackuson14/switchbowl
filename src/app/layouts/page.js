@@ -28,9 +28,11 @@ export default function Layouts() {
         />
         <span className="switch-name">Akashi</span>
         <span className="switch-brand">BSUN</span>
-        {/* <span class="material-symbols-outlined">
+        {
+        /* <span class="material-symbols-outlined">
           favorite
-        </span> */}
+        </span> */
+        }
       </div>
     </div>
     <footer>
