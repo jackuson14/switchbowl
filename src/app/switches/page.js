@@ -1,4 +1,4 @@
 
 export default function Switches() {
-    return <h1>Switches </h1>
+    return <h1>Switches</h1>
   }

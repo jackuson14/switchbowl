@@ -1,0 +1,51 @@
+.wrapper {
+  width: 100vw;
+}
+
+nav {
+  height: 4em;
+  padding: 0 10em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+}
+nav-logo {
+  max-width: 100px;
+}
+
+.container {
+  height: calc(100vh - 8em);
+  padding: 1em 10em;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.switch {
+  display: grid;
+  height: min-content;
+  justify-self: center;
+  border: 1px solid #e1e2e3;
+  border-radius: 12px;
+}
+.switch-name {
+  padding: 1rem 1rem 0.25rem 1rem;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.switch-brand {
+  padding: 0 1rem 1rem 1rem;
+  font-size: 0.8em;
+}
+
+footer {
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #eaeaea;
+}/*# sourceMappingURL=layouts.css.map */
