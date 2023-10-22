@@ -1,0 +1,130 @@
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+nav.old {
+  height: 4rem;
+  padding: 0 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+  &-logo {
+    max-width: 100px;
+  }
+}
+
+nav {
+  height: 100%;
+  padding: 24px 20px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row: 1 / span 9;
+  border-right: 1px solid #eaeaea;
+  background: rgba(1, 101, 140, 0.08);
+  justify-items: center;
+
+  &-logo {
+    max-height: 50px;
+    max-width: 50px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    li {
+      display: grid;
+      justify-items: center;
+      row-gap: 0.5rem;
+    }
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border-radius: 1rem;
+    }
+    span.name {
+      color: #1a1c1d;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+  }
+  ul li.active div {
+    background: #d6e4f0;
+  }
+
+  button {
+    align-self: flex-end;
+  }
+}
+
+.header {
+  margin-bottom: 1rem;
+  height: max-content;
+  grid-column: 1/span 10;
+  display: flex;
+  column-gap: 2rem;
+  .search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    span {
+      font-size: 20px;
+    }
+    input {
+      font-size: .95rem;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .search,
+  input {
+    background: #eff4f8;
+  }
+}
+
+.container {
+  height: auto;
+  padding: 1em 10em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.switch {
+  display: grid;
+  height: min-content;
+  justify-self: center;
+  border: 1px solid #e1e2e3;
+  border-radius: 12px;
+  cursor: pointer;
+  &-image {
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+  }
+  &-name {
+    padding: 0.75rem 0.75rem 0.25rem 0.75rem;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  &-brand {
+    padding: 0 0.75rem 0.75rem 0.75rem;
+    font-size: 0.8em;
+  }
+}
+
+footer {
+  grid-column: 2/ 3;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #eaeaea;
+  font-size: 0.8em;
+}
