@@ -1,0 +1,10 @@
+footer {
+    grid-column: 2/ 3;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #eaeaea;
+    font-size: 0.8em;
+  }
+  
