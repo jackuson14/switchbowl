@@ -1,8 +1,12 @@
 import Image from "next/image";
 import styles from "./layouts.css";
 import SwitchCard from "./components/Switch-Card/switch-card";
-import { collection, getDocs } from "firebase/firestore"; 
+import { collection, getDocs } from "firebase/firestore";
 import { db } from "../layout";
+
+import "@material/web/button/filled-button.js";
+import "@material/web/button/outlined-button.js";
+import "@material/web/checkbox/checkbox.js";
 
 const query = await getDocs(collection(db, "switches"));
 const switchesData = [];
@@ -12,8 +16,8 @@ query.forEach((doc) => {
 
 export default function Page() {
   return (
-    <div>
-      <div className="container">
+    <div className="container">
+      <div className="browse-panel">
         <div className="header">
           <Image
             className="logo"
@@ -28,9 +32,15 @@ export default function Page() {
           </div>
         </div>
         {switchesData.map((item, index) => (
-          <SwitchCard key={index} switchName={item.switchName} manufacturerName={item.switchManufacturer} switchImage={item.images ? item.images[0] : "/switch.jpg"}/>
+          <SwitchCard
+            key={index}
+            switchName={item.switchName}
+            manufacturerName={item.switchManufacturer}
+            switchImage={item.images ? item.images[0] : "/switch.jpg"}
+          />
         ))}
       </div>
+      <div className="detail-panel"></div>
     </div>
   );
 }
